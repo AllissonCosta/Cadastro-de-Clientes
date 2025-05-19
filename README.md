@@ -84,4 +84,3 @@ http://localhost:5000
 
 📌 Observações
 O banco de dados SQLite é criado automaticamente ao rodar o projeto.
-A exclusão de clientes é permanente (sem confirmação, para fins didáticos).
