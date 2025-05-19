@@ -66,7 +66,7 @@ cliente-cadastro/
 ```bash
 # 1. Clone o repositório
 git clone https://github.com/AllissonCosta/Cadastro-de-Clientes.git
-cd cliente-cadastro
+cd Cadastro-de-Clientes
 
 # 2. Crie e ative o ambiente virtual
 python -m venv venv
