@@ -71,6 +71,11 @@ cd Cadastro-de-Clientes
 # 2. Crie e ative o ambiente virtual
 python -m venv venv
 No PowerShell: venv\Scripts\activate
+No MacOs ou linux: source venv/bin/activate
+
+# 3. Se estiver dando erro de permissão no PowerShell, execute isso antes:
+Set-ExecutionPolicy RemoteSigned -Scope Process
+
 
 # 3. Instale o Flask
 pip install flask
