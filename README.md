@@ -48,7 +48,7 @@ Sistema web simples e funcional para **cadastro, visualização e exclusão de c
 ---
 
 ## ⚙️ Estrutura do Projeto
-
+```
 cliente-cadastro/
 ├── app.py # Backend Flask
 ├── clientes.db # Banco de dados SQLite
@@ -57,7 +57,7 @@ cliente-cadastro/
 ├── templates/
 │ └── index.html # Página principal
 └── venv/ # Ambiente virtual (opcional)
-
+```
 
 ---
 
