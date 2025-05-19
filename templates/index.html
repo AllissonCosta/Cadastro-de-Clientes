@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="contact-us">
+        <form method="POST" onsubmit="return validarFormulario()">
+            <input name="nome" placeholder="Nome" required type="text" />
+            <input name="email" placeholder="Email" required type="email" />
+            <input name="telefone" placeholder="Telefone" type="tel" required />
+            <button type="submit">CADASTRAR</button>
+        </form>
+    </div>
+
+    <div class="contact-us" style="margin-top: 40px; max-width: 500px;">
+        <h2 style="text-align: center;">Clientes Cadastrados</h2>
+        <ul>
+    {% for cliente in clientes %}
+        <li>
+            {{ cliente[1] }} - {{ cliente[2] }} - {{ cliente[3] }}
+            <form method="POST" action="/deletar/{{ cliente[0] }}" style="display:inline;">
+                <button type="submit" style=" display: inline-flex;  box-shadow: none; border-radius: 20%; border: none transparent; padding: 10px 10px; margin: 0px; cursor: pointer; font-size: 10px; line-height: 7pt; letter-spacing: 0px;">
+                    apagar
+                </button>
+            </form>
+        </li>
+    {% endfor %}
+</ul>
+    </div>
+
+    <script>
+        function validarFormulario() {
+            const telefone = document.querySelector('[name=telefone]').value;
+            if (telefone.length < 8) {
+                alert("Digite um telefone válido.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
