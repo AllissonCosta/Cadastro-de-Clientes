@@ -21,18 +21,18 @@ Sistema web simples e funcional para **cadastro, visualização e exclusão de c
 
 ### 🧾 Cadastro de Cliente
 
-!<img src="./dados.png" alt="Formulário de cadastro">
+!<img src="./image/dados.png" alt="Formulário de cadastro">
 
 ---
 
 ### 📋 Lista de Clientes
 
-!<img src="./lista.png" alt="Lista de clientes">
+!<img src="./image/lista.png" alt="Lista de clientes">
 ---
 
 ### 🗑️ Exclusão de Cliente (GIF)
 
-!<img src="./apagar.png" alt="Excluindo cliente">
+!<img src="./image/apagar.png" alt="Excluindo cliente">
 
 ---
 
